@@ -1,0 +1,8 @@
+# Ignore PHPStorm project preferences
+/.idea
+
+# Ignore the file containing the steam API key
+/tools/secret.php
+
+# Ignore the files in storage
+/public/storage

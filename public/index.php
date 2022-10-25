@@ -270,7 +270,7 @@
 					</div>
 				</li>
 				<li class="icon-volt revolt">
-					<small>Late 2021</small>
+					<small>Sometime in the future</small>
 					<h3>??? <small><a href="https://revolt.community">revolt.community</a></small></h3>
 				</li>
 			</ul>

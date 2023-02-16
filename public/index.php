@@ -271,7 +271,7 @@
 				</li>
 				<li class="icon-volt revolt">
 					<small>Sometime in the future</small>
-					<h3>??? <small><a href="https://revolt.community">revolt.community</a></small></h3>
+					<h3>Re-revolt??? Maybe??? Maybe never?</h3>
 				</li>
 			</ul>
 		</div>

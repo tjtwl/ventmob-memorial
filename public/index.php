@@ -14,15 +14,6 @@
     <link rel="canonical" href="https://ventmob.com" />
 
     <link rel="stylesheet" href="assets/stylesheets/index.css">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115764043-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-115764043-1');
-    </script>
 </head>
 <body>
 	<header>

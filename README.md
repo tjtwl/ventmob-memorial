@@ -8,7 +8,7 @@ This is the source-code for the VentMob and Revolt Gaming memorial website.
 Any contributions to this project are much appreciated, whether you are just posting an issue about some missing/incorrect information or creating a pull-request with enhancements.
 
 
-> Do you have any screenshots, videos or other content of VentMob or Revolt Gaming fun? Thanks for dropping them in an issue @ [github.com/thejjokerr/ventmob-memorial/issues](https://github.com/thejjokerr/ventmob-memorial/issues)!
+> Do you have any screenshots, videos or other content of VentMob or Revolt Gaming fun? Thanks for dropping them in an issue @ [github.com/tjtwl/ventmob-memorial/issues](https://github.com/tjtwl/ventmob-memorial/issues)!
 
 
 ## Installation

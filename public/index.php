@@ -50,7 +50,7 @@
 				<small>(2008 - 2011)</small> The mob years
 			</h2>
 			<p>
-				Below you can view a timeline of the VentMob history. If you get the feeling something is missing, be sure to <a href="https://github.com/thejjokerr/ventmob-memorial/issues" target="_blank">post an issue on GitHub</a> with the missing event or information and we'll correct it as soon as possible.
+				Below you can view a timeline of the VentMob history. If you get the feeling something is missing, be sure to <a href="https://github.com/tjtwl/ventmob-memorial/issues" target="_blank">post an issue on GitHub</a> with the missing event or information and we'll correct it as soon as possible.
 			</p>
 			<ul class="timeline">
 				<li class="important icon-start">
@@ -290,7 +290,7 @@
 				<span class="copyright">
 					This project is open-source and accepting contributions!
 				</span>
-				<a href="https://github.com/thejjokerr/ventmob-memorial" class="github">
+				<a href="https://github.com/tjtwl/ventmob-memorial" class="github">
 					<img src="assets/images/icons/GitHub-Mark-32px.png" alt="">
 					Check this out on GitHub!
 				</a>

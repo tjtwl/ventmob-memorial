@@ -246,7 +246,7 @@
 					</div>
 				</li>
 				<li class="important icon-death revolt">
-					<div class="line dotted">
+					<div class="line">
 						<small>Early 2013</small>
 						<h3>Gameserver stagnation</h3>
 						<p>
@@ -260,6 +260,14 @@
 						</p>
 					</div>
 				</li>
+				<li class="icon-heart revolt">
+					<div class="line dotted">
+            <small>2017</small>
+            <p>
+              In 2017 we shortly revived the VentMob forums for a Reunion event.
+            </p>
+          </div>
+        </li>
 				<li class="icon-volt revolt">
 					<small>Sometime in the future</small>
 					<h3>Re-revolt??? Maybe??? Maybe never?</h3>

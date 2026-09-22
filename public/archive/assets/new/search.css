@@ -1,0 +1,77 @@
+/* Search results palette to match the 2011 skin's navbar/blockrow look. */
+#globalsearch {
+  position: absolute;
+}
+
+#globalsearch .textbox {
+  width: 100%;
+}
+
+#vm-search-results {
+  background: white;
+  border: 1px solid #6b91ab;
+  border-radius: 4px;
+  font: 12px Arial, Calibri, Verdana, Geneva, sans-serif;
+  color: #333;
+}
+
+#vm-search-results .vm-sr-heading {
+  background: #3b3b3b;
+  color: #fff;
+  font: bold 11px Arial, Calibri, Verdana, Geneva, sans-serif;
+}
+
+#vm-search-results .vm-sr-users {
+  background: #eef3f6;
+  padding-top: 8px;
+}
+
+#vm-search-results .vm-sr-user {
+  background: white;
+  border: 1px solid #6b91ab;
+  color: #2b5a7a;
+  border-radius: 12px;
+}
+
+#vm-search-results .vm-sr-user:hover {
+  background: #eef3f6;
+}
+
+#vm-search-results .vm-sr-post {
+  border-bottom: 1px solid #dde5ea;
+  color: #333;
+}
+
+#vm-search-results .vm-sr-post:nth-child(even) {
+  background: #f7fafc;
+}
+
+#vm-search-results .vm-sr-post:hover {
+  background: #eef3f6;
+}
+
+#vm-search-results .vm-sr-title {
+  color: #2b5a7a;
+}
+
+#vm-search-results .vm-sr-meta {
+  color: #777;
+}
+
+#vm-search-results .vm-sr-authorbar {
+  background: #eef3f6;
+  border-bottom: 1px solid #dde5ea;
+  color: #333;
+}
+
+#vm-search-results .vm-sr-clear {
+  background: white;
+  border: 1px solid #6b91ab;
+  color: #2b5a7a;
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+
+#vm-search-results .vm-sr-empty {
+  color: #777;
+}

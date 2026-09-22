@@ -1,0 +1,69 @@
+/* Structural rules for the search results panel, shared by both skins.
+   Colours/fonts are supplied per skin in assets/old/search.css and assets/new/search.css. */
+#vm-search-results {
+	position: fixed;
+	z-index: 1000;
+	max-width: 560px;
+	max-height: 70vh;
+	overflow-y: auto;
+	box-sizing: border-box;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+	text-align: left;
+}
+#vm-search-results[hidden] {
+	display: none;
+}
+#vm-search-results .vm-sr-heading {
+	font-weight: bold;
+	padding: 6px 10px;
+}
+#vm-search-results .vm-sr-users {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	padding: 0 10px 8px;
+}
+#vm-search-results .vm-sr-user {
+	font: inherit;
+	cursor: pointer;
+	padding: 3px 9px;
+	border-radius: 12px;
+}
+#vm-search-results .vm-sr-posts {
+	display: block;
+}
+#vm-search-results .vm-sr-post {
+	display: block;
+	padding: 8px 10px;
+	text-decoration: none;
+}
+#vm-search-results .vm-sr-title {
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+#vm-search-results .vm-sr-snippet {
+	margin-bottom: 3px;
+	line-height: 1.4;
+}
+#vm-search-results .vm-sr-meta {
+	font-size: 0.9em;
+}
+#vm-search-results .vm-sr-authorbar {
+	padding: 8px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+#vm-search-results .vm-sr-clear {
+	font: inherit;
+	cursor: pointer;
+}
+#vm-search-results .vm-sr-empty {
+	padding: 10px;
+}
+#vm-search-results mark {
+	background: #ffe98a;
+	color: inherit;
+	padding: 0 1px;
+}

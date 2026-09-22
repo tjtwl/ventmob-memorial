@@ -8,6 +8,8 @@
 <title><?= e($title) ?> - VentMob forum archive (2011 skin)</title>
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="archive/assets/new/style.css">
+<link rel="stylesheet" href="archive/assets/shared/search.css">
+<link rel="stylesheet" href="archive/assets/new/search.css">
 <style>
   h2.blockhead { background: none; border: none; }
   .postcontainer { border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; }
@@ -40,9 +42,9 @@
 				<li class="off"><span class="navtab">What's New?</span></li>
 	</ul>
 	<div id="globalsearch" class="globalsearch">
-		<form class="navbar_search" action="#">
-			<span class="textboxcontainer"><span><input type="text" class="textbox" disabled></span></span>
-			<span class="buttoncontainer"><span><input type="image" class="searchbutton" src="archive/assets/new/images/buttons/search.png" alt="Search" disabled></span></span>
+		<form class="navbar_search" action="#" onsubmit="return false">
+			<span class="textboxcontainer"><span><input type="text" id="vm-search-input" class="textbox" autocomplete="off" placeholder="Search"></span></span>
+			<span class="buttoncontainer"><span><input type="image" class="searchbutton" src="archive/assets/new/images/buttons/search.png" alt="Search"></span></span>
 		</form>
 	</div>
 </div>
@@ -72,5 +74,8 @@
 	<div id="footer_time" class="shade footer_time">Preserved copy &middot; forum totals and skin as captured on <?= e(str_replace('-', '/', $stats['date'])) ?>.</div>
 	<div id="footer_copyright" class="shade footer_copyright">Powered by vBulletin&reg; Version 4.1.3<br>Copyright &copy; 2011 vBulletin Solutions, Inc. All rights reserved. Archive rebuilt from Wayback Machine captures.</div>
 </div>
+<div id="vm-search-results" hidden></div>
+<script src="archive/assets/shared/search-index.js" defer></script>
+<script src="archive/assets/shared/search.js" defer></script>
 </body>
 </html>

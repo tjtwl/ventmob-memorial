@@ -65,6 +65,12 @@ docker run -d \
 
 The data and assets are produced by a separate build tool that is not part of this repository. Posts are sanitized at build time, so templates print post bodies raw and escape everything else.
 
+The search box in both skins runs entirely client-side against a prebuilt index (`archive/assets/shared/search-index.js`). Regenerate it after the archive data changes:
+
+```
+php public/archive/build-search-index.php
+```
+
 ## Notes
 
 * By default a `.htaccess` is included for those who do not have access to apache config files. If you do have access then you should make these changes in the appropriate apache configuration. If you do want to use the `.htaccess`, make sure apache has AllowOverride set appropriately.

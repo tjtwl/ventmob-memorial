@@ -8,6 +8,8 @@
 <title><?= e($title) ?> - VentMob forum archive (2009 skin)</title>
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="archive/assets/old/style.css">
+<link rel="stylesheet" href="archive/assets/shared/search.css">
+<link rel="stylesheet" href="archive/assets/old/search.css">
 </head>
 <body>
 <?php partial($theme, 'bar', ['toggle' => $toggle]) ?>
@@ -34,7 +36,7 @@
 				<li><span>Rules</span></li>
 				<li><span>Today's Posts</span></li>
 			</ul>
-			<div id="searchbar"><strong>Search:</strong> &nbsp;<span class="shade">(disabled in the archive)</span></div>
+			<div id="searchbar"><strong>Search:</strong> &nbsp;<input type="text" id="vm-search-input" class="searchinput" autocomplete="off" placeholder="posts or a username&hellip;"></div>
 		</div>
 		<div id="navbar">
 			<table class="navbar_table navbar" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
@@ -68,5 +70,8 @@
 	</tr>
 	</table>
 </div>
+<div id="vm-search-results" hidden></div>
+<script src="archive/assets/shared/search-index.js" defer></script>
+<script src="archive/assets/shared/search.js" defer></script>
 </body>
 </html>

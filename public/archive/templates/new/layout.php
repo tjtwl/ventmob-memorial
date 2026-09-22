@@ -33,11 +33,11 @@
 <div id="navbar" class="navbar">
 	<ul id="navtabs" class="navtabs floatcontainer">
 		<li><a class="navtab" href="index.php">Memorial</a></li>
-		<li class="selected"><a class="navtab" href="archive.php">Forum</a></li>
+		<li class="<?= $title === 'Member List' ? '' : 'selected' ?>"><a class="navtab" href="archive.php">Forum</a></li>
+		<li class="<?= $title === 'Member List' ? 'selected' : '' ?>"><a class="navtab" href="archive.php?members=1">Member List</a></li>
 		<li class="off"><span class="navtab">Donations</span></li>
 		<li class="off"><span class="navtab">Bans</span></li>
-		<li class="off"><span class="navtab">Staff List</span></li>
-		<li class="off"><span class="navtab">What's New?</span></li>
+				<li class="off"><span class="navtab">What's New?</span></li>
 	</ul>
 	<div id="globalsearch" class="globalsearch">
 		<form class="navbar_search" action="#">

@@ -41,7 +41,7 @@ if ($site === null) {
 
 $page = isset($_GET['p']) ? max(1, (int) $_GET['p']) : 1;
 $other = $theme === 'old' ? 'new' : 'old';
-$route = array_intersect_key($_GET, ['t' => 1, 'f' => 1, 'p' => 1]);
+$route = array_intersect_key($_GET, ['t' => 1, 'f' => 1, 'p' => 1, 'members' => 1]);
 $common = [
     'stats' => $site['stats'][$theme],
     'toggle' => 'archive.php?' . http_build_query($route + ['theme' => $other]),
@@ -81,6 +81,19 @@ if (isset($_GET['t'])) {
             'pager' => paginate($page, $pages, fn ($n) => url_forum($fid, $n)),
             'is_last' => $page === $pages,
             'online' => pick_online('thread', substr($common['stats']['date'], 0, 7)),
+        ]);
+        exit;
+    }
+} elseif (isset($_GET['members'])) {
+    $members = load_json('members.json') ?? [];
+    $per = max(1, (int) $site['members_per_page']);
+    $pages = max(1, (int) ceil(count($members) / $per));
+    if ($page <= $pages) {
+        render_page($theme, 'members', $common + [
+            'title' => 'Member List',
+            'members' => array_slice($members, ($page - 1) * $per, $per),
+            'total_members' => count($members),
+            'pager' => paginate($page, $pages, fn ($n) => 'archive.php?members=1' . ($n > 1 ? '&p=' . $n : '')),
         ]);
         exit;
     }

@@ -19,7 +19,7 @@
 			<ul>
 				<li><a href="index.php">Memorial</a></li>
 				<li><a href="archive.php">Forum</a></li>
-				<li><span title="Not part of the archive">Members List</span></li>
+				<li><a href="archive.php?members=1">Members List</a></li>
 				<li><span title="Not part of the archive">FAQ</span></li>
 				<li><span title="Not part of the archive">Calendar</span></li>
 				<li><span title="Not part of the archive">Search</span></li>

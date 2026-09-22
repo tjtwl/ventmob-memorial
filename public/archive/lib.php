@@ -54,7 +54,7 @@ function truncate(string $text, int $length): string
     return mb_strlen($text) > $length ? rtrim(mb_substr($text, 0, $length - 3)) . '...' : $text;
 }
 
-/** A username, coloured/bold the way it was on the forum. Name and colour are escaped here. */
+/** A username, coloured/bold/struck-through the way it was on the forum. Name and colour are escaped here. */
 function name_html(array $user): string
 {
     $style = '';
@@ -63,6 +63,9 @@ function name_html(array $user): string
     }
     if (!empty($user['bold'])) {
         $style .= 'font-weight:bold;';
+    }
+    if (!empty($user['strike'])) {
+        $style .= 'text-decoration:line-through;';
     }
     return '<span class="u"' . ($style ? ' style="' . e($style) . '"' : '') . '>' . e($user['name']) . '</span>';
 }
@@ -115,7 +118,7 @@ function pick_online(string $kind, string $month): array
         $keys = (array) array_rand($eligible, min($wanted, count($eligible)) ?: 1);
         foreach (array_slice($keys, 0, $wanted) as $key) {
             $u = $eligible[$key];
-            $members[] = ['name' => $u['n'], 'color' => $u['c'] ?? null, 'bold' => !empty($u['b'])];
+            $members[] = ['name' => $u['n'], 'color' => $u['c'] ?? null, 'bold' => !empty($u['b']), 'strike' => !empty($u['k'])];
         }
         usort($members, fn ($a, $b) => strcasecmp($a['name'], $b['name']));
     }

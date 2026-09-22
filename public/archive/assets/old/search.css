@@ -1,63 +1,76 @@
 /* Search results palette to match the 2009 ("Pulse Red") skin's tborder/tcat/alt1/alt2 look. */
 div#searchbar {
-	position: relative;
+  position: relative;
 }
+
 div#searchbar input.searchinput {
-	background-color: white;
+  background-color: white;
 }
 
 #vm-search-results {
-	background: white;
-	border: 1px #a2a2a2 solid;
-	font: 11px Verdana, Tahoma, Arial;
-	color: #727272;
+  background: white;
+  border: 1px #a2a2a2 solid;
+  font: 11px Verdana, Tahoma, Arial;
+  color: #727272;
 }
+
 #vm-search-results .vm-sr-heading {
-	background: #2c2c2c;
-	color: #fff;
-	border-bottom: 5px #b31d22 solid;
-	font: bold 11px Verdana, Tahoma, Arial;
+  background: #2c2c2c;
+  color: #fff;
+  border-bottom: 5px #b31d22 solid;
+  font: bold 11px Verdana, Tahoma, Arial;
 }
+
 #vm-search-results .vm-sr-users {
-	background: #f6f6f6;
-	padding-top: 8px;
+  background: #f6f6f6;
+  padding-top: 8px;
 }
+
 #vm-search-results .vm-sr-user {
-	background: white;
-	border: 1px solid #a2a2a2;
-	color: #a73f44;
+  background: white;
+  border: 1px solid #a2a2a2;
+  color: #a73f44;
 }
+
 #vm-search-results .vm-sr-user:hover {
-	background: #f6f6f6;
+  background: #f6f6f6;
 }
+
 #vm-search-results .vm-sr-post {
-	border-bottom: 1px solid #e6e6e6;
-	color: #727272;
+  border-bottom: 1px solid #e6e6e6;
+  color: #727272;
 }
+
 #vm-search-results .vm-sr-post:nth-child(even) {
-	background: #f6f6f6;
+  background: #f6f6f6;
 }
+
 #vm-search-results .vm-sr-post:hover {
-	background: #fbeceb;
+  background: #fbeceb;
 }
+
 #vm-search-results .vm-sr-title {
-	color: #a73f44;
+  color: #a73f44;
 }
+
 #vm-search-results .vm-sr-meta {
-	color: #999;
+  color: #999;
 }
+
 #vm-search-results .vm-sr-authorbar {
-	background: #f6f6f6;
-	border-bottom: 1px solid #e6e6e6;
-	color: #727272;
+  background: #f6f6f6;
+  border-bottom: 1px solid #e6e6e6;
+  color: #727272;
 }
+
 #vm-search-results .vm-sr-clear {
-	background: white;
-	border: 1px solid #a2a2a2;
-	color: #a73f44;
-	border-radius: 3px;
-	padding: 3px 8px;
+  background: white;
+  border: 1px solid #a2a2a2;
+  color: #a73f44;
+  border-radius: 3px;
+  padding: 3px 8px;
 }
+
 #vm-search-results .vm-sr-empty {
-	color: #999;
+  color: #999;
 }

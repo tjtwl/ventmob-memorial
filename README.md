@@ -55,6 +55,16 @@ docker run -d \
    ```
 
 
+## Forum archive
+
+`archive.php` is a read-only replica of the old VentMob forums (2008-2011), viewable in the two skins the forum had (`?theme=old|new`, remembered in a cookie). The simulated "online now" and "browsing this thread" lists are random usernames from the archive's member list on every load.
+
+* `public/archive.php` - router. `public/archive/lib.php` and `public/archive/templates/{old,new}/` - PHP rendering, one template set per skin.
+* `public/archive/data/` - the content as JSON (`site.json`, `users.json`, `forums/<id>.json`, `threads/<id>.json`). It is generated from Wayback Machine captures of the original forum and is not meant to be edited by hand.
+* `public/archive/assets/` - skin CSS and images (generated together with the data).
+
+The data and assets are produced by a separate build tool that is not part of this repository. Posts are sanitized at build time, so templates print post bodies raw and escape everything else.
+
 ## Notes
 
 * By default a `.htaccess` is included for those who do not have access to apache config files. If you do have access then you should make these changes in the appropriate apache configuration. If you do want to use the `.htaccess`, make sure apache has AllowOverride set appropriately.

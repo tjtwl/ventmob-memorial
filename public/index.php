@@ -42,6 +42,9 @@
 			<p>
 				Below you can find a timeline with several important events in the VentMob history.
 			</p>
+			<p>
+				Want to see the forums as they were? <a href="archive.php">Browse the forum archive</a>, rebuilt from Wayback Machine captures and viewable in both the 2009 and the 2011 look.
+			</p>
 		</div>
 	</section>
 	<section class="timeline">

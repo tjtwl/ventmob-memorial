@@ -1,0 +1,5 @@
+# Only assets/ is meant to be fetched directly. Code and data are read by archive.php.
+<FilesMatch "\.(php|json)$">
+	Require all denied
+</FilesMatch>
+Options -Indexes

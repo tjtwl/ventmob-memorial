@@ -14,7 +14,7 @@
 <li class="postbitlegacy postbitim postcontainer" id="post_<?= (int) $p['pid'] ?>">
 	<div class="posthead">
 		<span class="postdate old"><span class="date"><?= e(fmt_date($p['date'])) ?><span class="time"> <?= e(fmt_time($p['date'])) ?></span></span></span>
-		<span class="nodecontrols"><a class="postcounter" name="post<?= (int) $p['pid'] ?>" href="#post<?= (int) $p['pid'] ?>"><?= $p['num'] ? '#' . (int) $p['num'] : '' ?></a></span>
+		<span class="nodecontrols"><a class="postcounter" name="post<?= (int) $p['pid'] ?>" href="#post<?= (int) $p['pid'] ?>"><?= $p['num'] ? '#' . (int) $p['num'] . ' &middot; ' : '' ?>#<?= (int) $p['pid'] ?></a></span>
 	</div>
 	<div class="postdetails">
 		<div class="userinfo">

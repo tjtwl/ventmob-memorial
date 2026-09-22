@@ -14,7 +14,7 @@ $crumb_last = $thread['title'];
 <table class="tborder" id="post<?= (int) $p['pid'] ?>" cellpadding="6" cellspacing="0" border="0" width="100%" align="center" style="margin-bottom:10px">
 <tr>
 	<td class="thead">
-		<div class="normal" style="float:right"><?= $p['num'] ? '#' . (int) $p['num'] : '' ?></div>
+		<div class="normal" style="float:right"><?= $p['num'] ? '#' . (int) $p['num'] . ' &middot; ' : '' ?>#<?= (int) $p['pid'] ?></div>
 		<div class="normal"><?= e(fmt_date($p['date'])) ?><?= $p['date'] ? ', ' . e(fmt_time($p['date'])) : '' ?></div>
 	</td>
 </tr>

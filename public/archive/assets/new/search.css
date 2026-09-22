@@ -1,8 +1,3 @@
-/* Search results palette to match the 2011 skin's navbar/blockrow look. */
-#globalsearch {
-  position: absolute;
-}
-
 #globalsearch .textbox {
   width: 100%;
 }

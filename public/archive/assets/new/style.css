@@ -8100,11 +8100,6 @@ body {
   cursor: default;
 }
 
-.globalsearch {
-  opacity: .45;
-  pointer-events: none;
-}
-
 .pagetitle h1 {
   font: bold 20px Arial, Tahoma, sans-serif;
 }
